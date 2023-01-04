@@ -8,6 +8,10 @@ app.get('/home', (req, res) => {
     res.send('Hello!')
 })
 
+app.get('/api/home', (req, res) => {
+    res.send('Helloaaa!')
+})
+
 app.use('*', (req, res) => {
     res.send('<h1>Page not found</h1>')
 })
