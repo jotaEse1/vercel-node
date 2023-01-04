@@ -9,7 +9,7 @@ const {
     deletePortfolio,
     addHoldings,
     updatePortfolio
-} = require('../controllers/portfolio')
+} = require('../server/controllers/portfolio')
 
 router.route('/')
     .get(getPortfolios)

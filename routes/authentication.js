@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router()
 const { signin, login } = require('../validator/validator')
-const {signIn, logIn, checkToken, logOut} = require('../controllers/authentication')
+const {signIn, logIn, checkToken, logOut} = require('../server/controllers/authentication')
 
 //routes
 router.route('/signin').post(signin, signIn)
