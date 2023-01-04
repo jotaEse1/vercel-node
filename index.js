@@ -9,7 +9,7 @@ app.get('/home', (req, res) => {
     res.send('Hello!')
 })
 
-app.get('/api/home', apiHome)
+app.get('/api/v1/home', apiHome)
 
 app.use('*', (req, res) => {
     res.send('<h1>Page not found</h1>')
