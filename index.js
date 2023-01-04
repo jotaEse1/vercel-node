@@ -1,4 +1,5 @@
 const express = require("express")
+const { apiHome } = require("./routes/home")
 const app = express()
 
 //port
@@ -8,9 +9,7 @@ app.get('/home', (req, res) => {
     res.send('Hello!')
 })
 
-app.get('/api/home', (req, res) => {
-    res.send('Helloaaa!')
-})
+app.get('/api/home', apiHome)
 
 app.use('*', (req, res) => {
     res.send('<h1>Page not found</h1>')
